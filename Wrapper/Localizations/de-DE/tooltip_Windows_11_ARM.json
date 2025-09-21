@@ -840,15 +840,15 @@
   },
   {
     "Region": "System",
-    "Function": "Win32LongPathLimit",
+    "Function": "Win32LongPathSupport",
     "Arg": {
       "Zero": {
-        "Tag": "Disable",
-        "ToolTip": "Deaktiviert die Windows-Pfadbegrenzung auf 260 Zeichen."
+        "Tag": "Enable",
+        "ToolTip": "Aktivieren Sie die Unterstützung langer Windows-Pfade, die standardmäßig auf 260 Zeichen begrenzt ist."
       },
       "One": {
-        "Tag": "Enable",
-        "ToolTip": "Aktiviert die Windows-Pfadbegrenzung auf 260 Zeichen (Standardwert)."
+        "Tag": "Disable",
+        "ToolTip": "Deaktivieren Sie die Unterstützung langer Windows-Pfade, die standardmäßig auf 260 Zeichen begrenzt ist (Standardwert)."
       }
     }
   },
@@ -1110,20 +1110,6 @@
   },
   {
     "Region": "System",
-    "Function": "FoldersLaunchSeparateProcess",
-    "Arg": {
-      "Zero": {
-        "Tag": "Enable",
-        "ToolTip": "Explorer in einem separaten Prozess starten."
-      },
-      "One": {
-        "Tag": "Disable",
-        "ToolTip": "Explorer nicht in einem separaten Prozess starten (Standardwert)."
-      }
-    }
-  },
-  {
-    "Region": "System",
     "Function": "ReservedStorage",
     "Arg": {
       "Zero": {
@@ -1231,6 +1217,20 @@
       "One": {
         "Tag": "Disable",
         "ToolTip": "Deaktivieren Sie das automatische Speichern meiner neu zu startenden Anwendungen beim Abmelden und starten Sie sie neu, nachdem Sie sich angemeldet haben (Standardwert)."
+      }
+    }
+  },
+  {
+    "Region": "System",
+    "Function": "RestorePreviousFolders",
+    "Arg": {
+      "Zero": {
+        "Tag": "Disable",
+        "ToolTip": "Vorherige Ordnerfenster bei der Anmeldung nicht wiederherstellen (Standardwert)."
+      },
+      "One": {
+        "Tag": "Enable",
+        "ToolTip": "Stellen Sie bei der Anmeldung die vorherigen Ordnerfenster wieder her."
       }
     }
   },
